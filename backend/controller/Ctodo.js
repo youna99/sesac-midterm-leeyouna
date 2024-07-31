@@ -46,7 +46,7 @@ exports.patchTodos = async (req, res) => {
         const { title, done } = req.body;
 
         const updateTodo = await todo.update(
-            {done},
+            {title,done},
             {where: {id}}
         );
         res.json(updateTodo)
