@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이유나</title>
     <link rel="stylesheet" href="./public/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <div class="todo-container">
@@ -14,11 +15,9 @@
         </div>
         <div id="inputField">
           <input type="text" id="todoInput" placeholder="할 일 추가하기">
-          <button type="button" id="addBtn" onkeypress="keyCodeCheck(event)">작성
-          </button>
+          <button type="button" id="addBtn" onkeypress="keyCodeCheck(event)">작성</button>
         </div>
-        <ul id="todoList">
-        </ul>
+        <ul id="todoList"></ul>
       </div>
 </body>
 <script src="./public/index.js"></script>
