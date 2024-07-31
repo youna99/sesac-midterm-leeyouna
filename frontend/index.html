@@ -7,21 +7,19 @@
     <link rel="stylesheet" href="./public/index.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="todo-container">
         <div class="header">
             <img src="./public/codingon.png" alt="codingon">
             <h1>Todo List</h1>
-        </div>   
-        <div class="inputField">
-            <input type="text" id="addValue" placeholder="할 일 추가하기"/>
-            <button type="button" id = "btn" onkeydown="addTodo()" onclick="addTodo()">작성</button>
         </div>
-        <div>
-            <ul id="addTodo" class="Todolist"> 
-                <li><div id='result'></div></li>
-            </ul>
+        <div id="inputField">
+          <input type="text" id="todoInput" placeholder="할 일 추가하기">
+          <button type="button" id="addBtn" onkeypress="keyCodeCheck(event)">작성
+          </button>
         </div>
-    </div>
+        <ul id="todoList">
+        </ul>
+      </div>
 </body>
 <script src="./public/index.js"></script>
 </html>
