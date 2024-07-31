@@ -1,0 +1,17 @@
+.container {
+    background-color: lightgreen;
+}
+
+.header {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+img {
+    width: 200px;
+}
