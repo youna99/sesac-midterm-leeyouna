@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이유나</title>
     <link rel="stylesheet" href="./public/index.css">
-    <script src="./public/index.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -15,7 +14,7 @@
         </div>   
         <div class="inputField">
             <input type="text" id="addValue" placeholder="할 일 추가하기"/>
-            <button type="button" id = "btn" onclick="addTodo()"><i class="xi-plus xi-2x"></i>작성</button>
+            <button type="button" id = "btn" onkeydown="addTodo()" onclick="addTodo()">작성</button>
         </div>
         <div>
             <ul id="addTodo" class="Todolist"> 
@@ -24,4 +23,5 @@
         </div>
     </div>
 </body>
+<script src="./public/index.js"></script>
 </html>
