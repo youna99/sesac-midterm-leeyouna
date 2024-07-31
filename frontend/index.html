@@ -8,18 +8,18 @@
     <script src="./public/index.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="wrapper">
         <div class="header">
             <img src="./public/codingon.png" alt="codingon">
             <h1>Todo List</h1>
+        </div>   
+        <div class="inputField">
+            <input type="text" id="addValue" placeholder="할 일 추가하기"/>
+            <button type="button" id = "btn" onclick="addTodo()"><i class="xi-plus xi-2x"></i>작성</button>
         </div>
-        <div class="todo-container">
-            <div id="inputField">
-              <input type="text" id="todoInput" placeholder="today's todo">
-              <button type="button" id="addBtn">작성</button>
-            </div>
-            <ul id="todoList">
-          
+        <div>
+            <ul id="addTodo" class="Todolist"> 
+                <li><div id='result'></div></li>
             </ul>
         </div>
     </div>
