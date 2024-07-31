@@ -15,7 +15,7 @@ exports.postTodos = async (req, res) => {
         console.log(req.body);
         const {title, done} = req.body;
         const newTodo = await todo.create({
-            title, done, createdAt, updatedAt
+            title, done
         });
         res.json(newTodo);
     } catch (error) {
